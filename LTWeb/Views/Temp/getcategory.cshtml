@@ -1,0 +1,19 @@
+﻿@model IEnumerable<LTWeb.Model.category>
+
+<div class="megapanel">
+    <div class="row">
+        <div class="col1">
+            <div class="h_nav">
+                <ul>
+                    @foreach (var i in Model)
+                    {
+                        <li><a href="#">@i.name</a></li>
+                    }
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

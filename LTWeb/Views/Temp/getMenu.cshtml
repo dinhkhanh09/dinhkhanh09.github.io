@@ -1,0 +1,14 @@
+﻿@model IEnumerable  <LTWeb.Model.menu>
+
+<div class="col-xs-7 menu">
+    <ul class="megamenu skyblue">
+        @foreach (var i in Model)
+        {
+        <li class="active grid">
+            <a class="color1" href="index.html">@i.name</a>
+            @{ Html.RenderAction("getcategory", "Temp", new {id= @i.id});}
+        </li>
+        }
+    </ul>
+</div>
+
